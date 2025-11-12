@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const checkoutBtn = document.getElementById('checkoutBtn');
     const notification = document.getElementById('notification');
     const notificationText = document.getElementById('notificationText');
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const navLinks = document.getElementById('navLinks');
     
     // Nomor WhatsApp untuk checkout
     const whatsappNumber = '6281511449778'; // Ganti dengan nomor WhatsApp Anda
@@ -36,6 +38,21 @@ document.addEventListener('DOMContentLoaded', function() {
     cartIcon.addEventListener('click', openCart);
     closeCart.addEventListener('click', closeCartFunc);
     overlay.addEventListener('click', closeCartFunc);
+    
+    // Fungsi untuk toggle mobile menu
+    function toggleMobileMenu() {
+        navLinks.classList.toggle('active');
+    }
+    
+    // Event listener untuk mobile menu toggle
+    mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+    
+    // Tutup menu saat klik link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', function() {
+            navLinks.classList.remove('active');
+        });
+    });
     
     // Fungsi untuk menampilkan notifikasi
     function showNotification(message) {
