@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sate TaichanKu - Lezatnya Sate Taichan Autentik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <img src="https://z-cdn-media.chatglm.cn/files/8a8b6d7c-95aa-4cc4-8ad6-2ae6f8c82bac_Taichan%20Logo.jpeg.jpg?auth_key=1862691616-2fc9a617418b4f4a8fe0ea8b4c45bf18-0-fe9b9df58900b7e515e4adc3b1166f73" alt="TaichanKu Logo">
+                    TaichanKu
+                </a>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#products">Menu</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#testimonials">Testimoni</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+                
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+                
+                <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <div class="hero-logo">
+            <img src="https://z-cdn-media.chatglm.cn/files/8a8b6d7c-95aa-4cc4-8ad6-2ae6f8c82bac_Taichan%20Logo.jpeg.jpg?auth_key=1862691616-2fc9a617418b4f4a8fe0ea8b4c45bf18-0-fe9b9df58900b7e515e4adc3b1166f73" alt="TaichanKu Logo">
+        </div>
+        <h1>Taichan Dulu, Galau Belakangan</h1>
+        <p>Nikmati sensasi rasa autentik Sate Taichan dengan sambal khas yang menggugah selera</p>
+        <a href="#products" class="btn">Pesan Sekarang</a>
+    </div>
+</section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Menu Kami</h2>
+                <p>Pilihan Sate Taichan dengan berbagai varian sambal</p>
+            </div>
+            
+            <div class="product-grid" id="productGrid">
+                <!-- Produk akan dimuat di sini oleh JavaScript -->
+                <div class="product-card">
+                    <img src="https://z-cdn-media.chatglm.cn/files/f3ae8c20-05f5-445e-806d-e77043e191c2_Taichan%20Original.jpeg.jpg?auth_key=1862691616-f25777971c674791b1d3f1afda66db24-0-ffcc83130d413ec5e904ad89365540eb" alt="Taichan Original" class="product-img">
+                    <div class="product-info">
+                        <h3>Taichan Original</h3>
+                        <p>Sate taichan dengan bumbu original dan sambal khas</p>
+                        <div class="product-price">Rp 17.000</div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-name="Taichan Original" data-price="17000">Tambah ke Keranjang</button>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="https://z-cdn-media.chatglm.cn/files/abe53216-51a8-40d2-b433-ab4ae06e8e46_Kulit%20Sambal%20Geprek.jpg?auth_key=1862691616-47184579b2bc48d4959aa11b1867ddc5-0-d04645c63965cc96cbb12f5d7ab056b1" alt="Kulit Sambal Geprek" class="product-img">
+                    <div class="product-info">
+                        <h3>Sate Kulit Crispy </h3>
+                        <p>Nikmati renyahnya setiap gigitan! Sate Kulit Ayam Crispy — gurih, garing, dan bikin ketagihan! </p>
+                        <div class="product-price">Rp 15.000</div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-name="Sate Kulit Crispy" data-price="15000">Tambah ke Keranjang</button>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Menu Baru: Taichan Geprek -->
+                <div class="product-card">
+                    <img src="https://z-cdn-media.chatglm.cn/files/a06d4b2b-956b-4b36-9210-1a3387bb41f3_taichan%20geprek.jpeg.jpg?auth_key=1862767289-ec1c04c997b04ecabe7b4100c8997eba-0-050c25d43e07488db94fe1f50505e1ae" alt="Taichan Geprek" class="product-img">
+                    <div class="product-info">
+                        <h3>Taichan Geprek</h3>
+                        <p>Sate taichan dengan sambal geprek pedas yang khas, dilengkapi dengan irisan jeruk nipis segar</p>
+                        <div class="product-price">Rp 18.000</div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-name="Taichan Geprek" data-price="18000">Tambah ke Keranjang</button>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="https://z-cdn-media.chatglm.cn/files/366fe9e0-f689-4b40-a907-f48a89188cd8_Sambal%20Geprek.jpeg.jpg?auth_key=1862691616-bfb9f465d87f4c8c96491dc32b0fd005-0-8e75918805da8cbd14167fda528f9f2c" alt="Sambal Geprek" class="product-img">
+                    <div class="product-info">
+                        <h3>Sambal Geprek</h3>
+                        <p>Pedasnya nampol, rasanya nagih! Sambal Geprek — teman sempurna untuk setiap lauk!</p>
+                        <div class="product-price">Rp 5.000</div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-name="Sambal Geprek" data-price="5000">Tambah ke Keranjang</button>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="https://z-cdn-media.chatglm.cn/files/2a7f0bcc-5494-4757-8b89-4d7aeeeab3cc_Sambal%20Taichan.jpeg.jpg?auth_key=1862691616-914eec036f1c43cdbb57cb2a4c8e45f4-0-9f7ae331ccd85f52230de5e3565c0463" alt="Sambal Taichan" class="product-img">
+                    <div class="product-info">
+                        <h3>Sambal Matah</h3>
+                        <p>Sambal Matah hadir dengan perpaduan pedas, gurih, dan aroma segar khas Bali. Bikin makan makin nikmat dan nggak bisa berhenti nambah nasi</p>
+                        <div class="product-price">Rp 5.000</div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-name="Sambal Matah" data-price="5000">Tambah ke Keranjang</button>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="https://z-cdn-media.chatglm.cn/files/7c00bd72-bb61-42f9-9c77-fa48f7cb7ad9_Taichan%20Sambal%20Matah.jpeg.jpg?auth_key=1862691616-db913477329a48538f13129b39210cf3-0-6c66389500d6dfd37e36160cad4f6175" alt="Taichan Sambal Matah" class="product-img">
+                    <div class="product-info">
+                        <h3>Taichan Sambal Matah</h3>
+                        <p>Sate taichan dengan sambal matah khas Bali yang segar</p>
+                        <div class="product-price">Rp 18.000</div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-name="Taichan Sambal Matah" data-price="18000">Tambah ke Keranjang</button>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Menu Paket Komplit dengan Gambar Baru (Taichan Lontong) -->
+                <div class="product-card">
+                    <img src="https://z-cdn-media.chatglm.cn/files/df5f5ec6-a5af-494f-a5e3-41e5efb986b1_taichan%20lontong.jpeg.jpg?auth_key=1862767289-602408f277f349e0b3c07d14de2fbb30-0-017574b870e543a20273de0762855707" alt="Paket Komplit" class="product-img">
+                    <div class="product-info">
+                        <h3>Paket Komplit</h3>
+                        <p>Sate taichan dengan berbagai pilihan sambal, lontong, sayuran segar, dan pelengkap lainnya</p>
+                        <div class="product-price">Rp 20.000</div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-name="Paket Komplit" data-price="20000">Tambah ke Keranjang</button>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tentang Kami</h2>
+                <p>Kisah di balik TaichanKu</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="https://z-cdn-media.chatglm.cn/files/8a8b6d7c-95aa-4cc4-8ad6-2ae6f8c82bac_Taichan%20Logo.jpeg.jpg?auth_key=1862691616-2fc9a617418b4f4a8fe0ea8b4c45bf18-0-fe9b9df58900b7e515e4adc3b1166f73">
+                </div>
+                
+                <div class="about-text"> 
+                    <h2>Menyajikan Sate Taichan Autentik</h2>
+                    <p>TaichanKu didirikan dengan passion untuk menyajikan sate taichan autentik dengan cita rasa yang khas. Kami menggunakan bahan-bahan pilihan dan resep turun-temurun untuk menciptakan pengalaman kuliner yang tak terlupakan.</p>
+                    <p>Setiap tusuk sate taichan kami diproses dengan hati-hati, dari pemilihan daging segar hingga pembuatan sambal yang pas di lidah. Kami percaya bahwa makanan enak adalah makanan yang dibuat dengan cinta.</p>
+                    <a href="#contact" class="btn">Hubungi Kami</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tim Kami</h2>
+                <p>Orang-orang di balik kesuksesan TaichanKu</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="apis gondrong.jpg.jpg" alt="apis gondrong">
+                    </div>
+                    <div class="member-info">
+                        <h3>Muhammad Hafiz Hidayat</h3>
+                        <p class="member-position">Founder & CEO</p>
+                        <p class="member-desc">Pendiri TaichanKu dengan visi menyajikan sate taichan autentik untuk semua orang.</p>
+                        <div class="member-social">
+                            <a href="https://instagram.com/ahmadfauzi" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/ahmadfauzi" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://facebook.com/ahmadfauzi" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://wa.me/6281234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="apis.jpg.jpg" alt="apis">
+                    </div>
+                    <div class="member-info">
+                        <h3>Muhammad Hafiz</h3>
+                        <p class="member-position">Head Chef</p>
+                        <p class="member-desc">Chef berpengalaman dengan spesialisasi dalam menciptakan sambal khas TaichanKu.</p>
+                        <div class="member-social">
+                            <a href="https://instagram.com/sitinurhaliza" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/sitinurhaliza" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://facebook.com/sitinurhaliza" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://wa.me/6281234567891" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="bayu.jpg.jpg" alt="bayu">
+                    </div>
+                    <div class="member-info">
+                        <h3>Bayu Sena Aji</h3>
+                        <p class="member-position">Marketing Manager</p>
+                        <p class="member-desc">Ahli pemasaran dengan strategi brilian untuk memperluas jangkauan TaichanKu.</p>
+                        <div class="member-social">
+                            <a href="https://instagram.com/budisantoso" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/budisantoso" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://facebook.com/budisantoso" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://wa.me/6281234567892" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="fadhli.jpg.jpg" alt="fadhli">
+                    </div>
+                    <div class="member-info">
+                        <h3>Muhammad Fadhli Hafizh</h3>
+                        <p class="member-position">Operational Manager</p>
+                        <p class="member-desc">Mengelola operasional harian untuk memastikan kualitas dan konsistensi produk.</p>
+                        <div class="member-social">
+                            <a href="https://instagram.com/rinawijaya" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/rinawijaya" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://facebook.com/rinawijaya" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://wa.me/6281234567893" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Testimoni Pelanggan</h2>
+                <p>Apa kata mereka tentang TaichanKu</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Sate taichan di sini enak banget! Dagingnya empuk dan sambalnya pedasnya pas. Recommended banget untuk yang suka pedas!</p>
+                    <div class="testimonial-author">
+                        <img src="https://picsum.photos/seed/person1/50/50.jpg" alt="Pelanggan" class="author-img">
+                        <div class="author-info">
+                            <h4>Rizki Ahmad</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Pertama kali coba sate taichan dan langsung jatuh cinta! Porsinya pas dan harganya terjangkau. Pasti akan balik lagi!</p>
+                    <div class="testimonial-author">
+                        <img src="https://picsum.photos/seed/person2/50/50.jpg" alt="Pelanggan" class="author-img">
+                        <div class="author-info">
+                            <h4>Nabilah</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Sambal matahnya juara! Segar dan pedasnya pas. Dagingnya juga tidak amis. Overall, pengalaman makan yang menyenangkan!</p>
+                    <div class="testimonial-author">
+                        <img src="https://picsum.photos/seed/person3/50/50.jpg" alt="Pelanggan" class="author-img">
+                        <div class="author-info">
+                            <h4>Budi Santoso</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hubungi Kami</h2>
+                <p>Ada pertanyaan atau ingin pesan? Silakan hubungi kami</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Nomor Telepon</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Kirim Pesan</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Informasi Kontak</h3>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Jl. Moch. Kahfi II No.33, RT.1/RW.5, Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 13550</p>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+6281511449778</p>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>taichanku57@gmail.com</p>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Senin - Minggu: 10:00 - 22:00</p>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-shipping-fast"></i>
+                        <p>Pengiriman tersedia untuk area Jakarta dan sekitarnya</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Google Maps -->
+            <div class="map-container">
+                <h3>Lokasi Kami</h3>
+                <div class="map-wrapper">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.4618287253797!2d106.83048117408012!3d-6.334168593655473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f28324b8d573%3A0x64d2165a56a878dc!2sInstitut%20Bisnis%20%26%20Informatika%20(IBI)%20Kosgoro%201957!5e0!3m2!1sid!2sid!4v1762776456664!5m2!1sid!2sid"
+                         width="100%" 
+                        height="450"
+                        style="border:0; border-radius: 15px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="https://z-cdn-media.chatglm.cn/files/8a8b6d7c-95aa-4cc4-8ad6-2ae6f8c82bac_Taichan%20Logo.jpeg.jpg?auth_key=1862691616-2fc9a617418b4f4a8fe0ea8b4c45bf18-0-fe9b9df58900b7e515e4adc3b1166f73" alt="TaichanKu Logo">
+                        TaichanKu
+                    </div>
+                    <p>Menyajikan sate taichan autentik dengan cita rasa yang khas dan sambal yang menggugah selera.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1A17jajbJR/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/taichanku57?igsh=MWhybWNrZmdqanFzYQ=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@taichanku.ibik.57?_t=ZS-90lFPzynGpF&_r=1"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/6281511449778"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Menu Cepat</h3>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#products">Menu</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#testimonials">Testimoni</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Menu Kami</h3>
+                    <ul>
+                        <li><a href="Taichan Original.jpeg.jpg">Taichan Original</a></li>
+                        <li><a href="taichan geprek.jpeg.jpg">Taichan Geprek</a></li>
+                        <li><a href="Sambal Geprek.jpeg.jpg">Sambal Geprek</a></li>
+                        <li><a href="Sambal Taichan.jpeg.jpg">Sambal Matah</a></li>
+                        <li><a href="taichan lontong.jpeg.jpg">Paket Komplit</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Layanan</h3>
+                    <ul>
+                        <li><a href="#">Pesan Antar</a></li>
+                        <li><a href="#">Pesan Online</a></li>
+                        <li><a href="#">Catering</a></li>
+                        <li><a href="#">Franchise</a></li>
+                        <li><a href="#">Karir</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 TaichanKu. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Keranjang Belanja</h3>
+            <button class="close-cart" id="closeCart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="cart-items" id="cartItems">
+            <!-- Item keranjang akan dimuat di sini -->
+            <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Keranjang belanja Anda kosong</p>
+            </div>
+        </div>
+        
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">Rp 0</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">
+                <i class="fab fa-whatsapp"></i>
+                Checkout via WhatsApp
+            </button>
+        </div>
+    </div>
+    
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+    
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        <i class="fas fa-check-circle"></i>
+        <span id="notificationText">Produk berhasil ditambahkan ke keranjang</span>
+    </div>
+
+    <script src="assets/js/script.js" defer></script>
+</body>
+</html>
